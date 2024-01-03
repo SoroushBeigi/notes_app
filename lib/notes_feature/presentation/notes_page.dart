@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes/core/constants.dart';
 
 class NotesPage extends StatefulWidget {
   const NotesPage({super.key});
@@ -10,6 +11,12 @@ class NotesPage extends StatefulWidget {
 class _NotesPageState extends State<NotesPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text(Constants.appName),
+      ),
+      floatingActionButton:
+          FloatingActionButton(onPressed: () {}, child: const Icon(Icons.add)),
+    );
   }
 }
